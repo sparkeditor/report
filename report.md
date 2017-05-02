@@ -88,9 +88,14 @@ Although the final version of Spark was nowhere near my initial plan, I am proud
 
 ## References
 Writely word processor: <https://en.wikipedia.org/wiki/Google_Docs,_Sheets_and_Slides>
+
 Squad editor:           <https://squadedit.com>
+
 Firepad editor:         <https://firepad.io>
+
 Cloud9 IDE:             <https://c9.io>
+
 Vue.js:                 <https://vuejs.org>
+
 Spark editor proposal:  <https://jdormit.github.io/senior-project-site>
 
