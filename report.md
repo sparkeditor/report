@@ -1,5 +1,5 @@
 # Spark Collaborative Editor Final Report
-by Jeremy Dormitzer
+Jeremy Dormitzer
 
 ## Abstract
 For my senior project, I decided to build a collaborative text editor in the style of Google Docs. I hoped to make a tool that could support remote pair programming, in the classroom and in the workplace. After drafting an ambitious plan, I pared down the scope of the project to a more realistic level. The final result was a basic web-based text editor with some advanced features and full support for collaborative editing of documents. Although the software I built was not as fully-featured as I had hoped, I considerably advanced my software engineering skills and built a basic product that could be built upon in the future.
@@ -66,7 +66,21 @@ I chose a tech stack that I was familiar with, for the most part. I wanted to fo
 On the client side, I chose to use the [Vue.js](https://vuejs.org) JavaScript framework to build the UI. Vue is a framework which binds DOM elements to data, and automatically and efficiently updates the DOM when the data changes. This makes it trivial to create highly interactive, data-rich web applications such as a code editor. Vue applications are built from components, which are reusable elements that take in some data and render it to HTML. Using components allowed for an extremely modular and DRY ("Don't Repeat Yourself") architecture. To implement the actual text editing, I used the [Ace editor](https://ace.c9.io) library. This turned out to be an excellent decision, as I mentioned above, because Ace is extremely powerful. It gave me syntax highlighting for most languages, autocompletion, and error checking basically out of the box. The flip side, however, is that the documentation for the library is terrible. I had to look up how to do almost everything on Stack Overflow, and even then there was a fair amount of debugging, reading source code, and trial-and-error involved in getting the thing to work. Despite those hiccups, it was an excellent choice because it made the final product much more polished than it otherwise would have.
 
 ## Results
+The editor turned out quite nicely, even though it was not as fully featured as I wanted it to be. 
+
+The functionality of the final editor is detailed [above](#methods).
+
+### Screenshots
+
+**Main Window**
+
+![Spark Editor Main Window](images/spark1.png)\ 
+
+**Collaborative Editing**
+
+![Spark Editor Collaborative Editing](images/spark2.png)\ 
 
 ### Lessons Learned
+In building Spark, I learned quite a bit about software architecture and design, networked applications, and realistic project scoping. Vue helped me see the benefits of modular code, to the point where I could write reusable components that were totally generic (i.e., all data used to render them was passed in from the outside). I even built some recursive components like the file tree - a file tree is really a recursive tree where the nodes are directories or files. Building an application that is meant to be used over the network means factoring in different concerns than those involved with writing local-only applications. For example, network latency meant that certain changes were non-deterministic - changes to files from other clients could arrive in a different order than they were sent. In coming up with solutions for these types of problems, I learned to build failure-resistant systems and algorithms. Finally, I learned that my idea of a reasonable scope for a project is usually way off. Next time I plan something this big, I will decide what features I want to include, then cut the list in half (or even smaller). Software projects, even smallish ones, inevitably involve complications and unexpected concerns. I learned to plan for that.
 
 ## Conclusions
