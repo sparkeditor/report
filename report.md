@@ -13,6 +13,49 @@ Collaborative real-time editing on the web is not a new idea. In 2005, a company
 The application that I wanted to build would have stood out from existing projects (perhaps other than Firepad) due to its open-source community and its focus on pair programming. However, because I did not achieve everything I had outlined, Spark is instead in a position where it can draw influence and inspiration from other web-based text editors.
 
 ## Methods
+In my original proposal, I split the list of features for the project into two categories: MVP (minimum viable product) and stretch features. I planned to fully implement all MVP features and implement stretch features if I had time. Here is the breakdown of both lists:
+
+**MVP Features**
+
+- Real-time collaborative editing
+- Basic security
+- HTTP Basic Authentication
+- Encrypted web socket traffic
+- Autosave
+- Syntax highlighting (using an existing solution)
+- File tree
+- Text chat
+- Tabs and multiple open files
+- Configurable via the UI or a config file
+
+**Stretch Features**
+
+- Plugin system (for things like third-party integrations or debugging support)
+- Moveable, resizable panes
+- IDE Features
+    - Autocompletion
+    - Refactoring
+- Video/voice chat
+- Multiple key binding schemes
+- Color themes
+- Git/Github integration
+- Support for more languages
+- Progressive web app for easy mobile/tablet use
+- Desktop client built with Electron
+
+Certain technical decisions I made (detailed below) enabled me to achieve many of the stretch features. Conversely, some of the MVP features ended up being too complicated to implement and were left out. Here is a list of features that got implemented:
+
+**Implemented Features**
+
+- Real-time collaborative editing
+- Authentication
+- Syntax highlighting
+- File tree
+- Autocompletion
+- Error checking
+- Support for most programming languages
+
+From the list, it is clear that my original plan was too ambitious.
 
 ## Results
 
